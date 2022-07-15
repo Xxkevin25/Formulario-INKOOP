@@ -124,3 +124,16 @@ a:hover{
     margin-bottom: 40px;
 }
 
+
+@media screen and (max-width: 700px) {
+    .right{
+        display: none;
+    }
+
+    .cont-main{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+  }
