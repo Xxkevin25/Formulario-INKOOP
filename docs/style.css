@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+	background: #00ffbf;
+	font-family: 'Quicksand', sans-serif;
+
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.l-header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.cont-main {
+
+    margin: 50px;
+	width: 90%;
+	max-width: 800px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	background: #fff;
+	min-height: 60vh;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    padding: 20px;
+}
+
+.right{
+    background-image: url('https://inkoop-group.com/wp-content/uploads/2019/11/inkoo-group.png');
+	/* background-size: contain; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #464646;
+}
+
+.registro.activo{
+    display: block;
+}
+
+.registro {
+    display: none;
+}
+
+
+.exito{
+    display: none;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+
+
+}
+
+.exito.activo{
+    display:flex ;
+}
+
+.imax img{
+    width: 200px;
+    height: 200px;
+}
+
+h6{
+    padding-top: 40px;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+
+}
+
+/* Aqui estara todo lo que tenga que ver con los inputs */
+textarea{
+    padding: 10px;
+}
+
+h3{
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4{
+    padding-top: 20px;
+}
+
+.r-temperature{
+    border: 1px solid #49494993;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.link{
+    margin-bottom: 40px;
+}
+

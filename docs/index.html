@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://inkoop-group.com/wp-content/uploads/2019/11/inkoo-group.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cont-main">
+
+        <div class="left">
+
+
+
+            <div class="registro activo" id="registro">
+
+                <div class="l-header">
+                    <img src="https://inkoop-group.com/wp-content/uploads/2019/11/inkoo-group.png" alt="">
+                    <p>Final Report</p>
+                </div>
+
+                <form id="formu">
+
+                    <div class="mb-3">
+                        <label for="text-ref" class="form-label">Referencia de contenedor</label>
+                        <input type="text" class="form-control" id="textref">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ref-date" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="dateref">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text-ref" class="form-label">Desde</label>
+                        <input type="text" class="form-control" id="desderef">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text-ref" class="form-label">Hacia</label>
+                        <input type="text" class="form-control" id="haciaref">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text-ref" class="form-label">Introduccion</label>
+                        <textarea name="intro" id="paragh" cols="40" rows="7" placeholder="type here..."></textarea>
+                    </div>
+
+                    <hr>
+
+                    <h3>Registro de Tiempo</h3>
+
+                    <div class="mb-3">
+                        <label for="ref-date" class="form-label">Fecha y Hora</label>
+                        <input type="datetime-local" class="form-control" id="fechyhor">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text-ref" class="form-label">Descripcion de la actividad</label>
+                        <textarea name="intro" id="decrip1" cols="40" rows="7" placeholder="type here..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ref-date" class="form-label">Fecha y Hora</label>
+                        <input type="datetime-local" class="form-control" id="fechyhor2">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text-ref" class="form-label">Descripcion de la actividad</label>
+                        <textarea name="intro" id="decrip2" cols="40" rows="7" placeholder="type here..."></textarea>
+                    </div>
+
+                    <hr>
+
+                    <h3> Registro de Temperatura</h3>
+
+                    <div class="r-temperature">
+
+                        <div class="mb-3">
+                            <label for="ref-date" class="form-label">Tiempo(Hora)</label>
+                            <input type="time" class="form-control" id="tiempo">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ref-date" class="form-label">Temperatura(C°)</label>
+                            <input type="number" class="form-control" id="temper">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ref-date" class="form-label">Lugar</label>
+                            <input type="text" class="form-control" id="place">
+                        </div>
+
+                    </div>
+
+                    <h4>Convert images first</h4>
+
+
+                    <button type="button" class="btn link btn-dark">
+                        <a href="https://es.imgbb.com/" target="_blank" rel="noopener noreferrer">Image
+                            Converter</a>
+                    </button>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Colocar el numero en orden de la
+                            imagen</label>
+                        <input type="tel" class="form-control" id="numorder" placeholder="1,2,3...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Links de las imagenes</label>
+                        <textarea class="form-control" id="filex" rows="3"></textarea>
+                    </div>
+
+                    <hr>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Conclusion Inkoop</label>
+                        <textarea class="form-control" id="conclu" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+                        <textarea class="form-control" id="obsr" rows="3"></textarea>
+                    </div>
+
+                    <div class="enviar">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <div class="exito" id="exito">
+                <div class="imax">
+                    <img src="https://cdn-icons.flaticon.com/png/512/3936/premium/3936744.png?token=exp=1657837904~hmac=bfb48f4bfe8b0c0ee7fd1cd0f70b3a76"
+                        alt="">
+                </div>
+                <h6>Thanks for You Answer</h6>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="right">
+        </div>
+
+    </div>
+
+    <!-- <style>
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 30vw;
+            margin: auto;
+        }
+    </style> -->
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
